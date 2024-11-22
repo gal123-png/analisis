@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Pemain Sepak Bola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-semibold text-center text-purple-700 mb-6">Formulir Pemain Sepak Bola</h1>
+
+        <form id="playerForm" class="bg-white p-6 rounded-lg shadow-lg space-y-4">
+            <div class="space-y-2">
+                <label for="playerName" class="block text-lg text-gray-700">Nama Pemain:</label>
+                <input type="text" id="playerName" required class="w-full p-2 border border-gray-300 rounded-md" />
+            </div>
+
+            <div class="space-y-2">
+                <label for="playerPosition" class="block text-lg text-gray-700">Posisi:</label>
+                <select id="playerPosition" required class="w-full p-2 border border-gray-300 rounded-md">
+                    <option value="GK">GK</option>
+                    <option value="CB">CB</option>
+                    <option value="LB">LB</option>
+                    <option value="RB">RB</option>
+                    <option value="DMF">DMF</option>
+                    <option value="CMF">CMF</option>
+                    <option value="LMF">LMF</option>
+                    <option value="RMF">RMF</option>
+                    <option value="AMF">AMF</option>
+                    <option value="LWF">LWF</option>
+                    <option value="RWF">RWF</option>
+                    <option value="SS">SS</option>
+                    <option value="CF">CF</option>
+                </select>
+            </div>
+
+            <!-- Input statistik pemain -->
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Tambahkan input lainnya sesuai kebutuhan -->
+                <div class="space-y-2">
+                    <label for="drible" class="block text-lg text-gray-700">Drible:</label>
+                    <input type="number" id="drible"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+
+                </div>
+                <div class="space-y-2">
+                    <label for="dribleAkurat" class="block text-lg text-gray-700">Drible Akurat:</label>
+                    <input type="number" id="dribleAkurat"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="umpanRendah" class="block text-lg text-gray-700">Umpan Rendah:</label>
+                    <input type="number" id="umpanRendah"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+
+                </div>
+                <div class="space-y-2">
+                    <label for="umpanLambung" class="block text-lg text-gray-700">Umpan Lambung:</label>
+                    <input type="number" id="umpanLambung"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+
+                </div>
+                <div class="space-y-2">
+                    <label for="penyelesaian" class="block text-lg text-gray-700">Penyelesaian:</label>
+                    <input type="number" id="penyelesaian"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="sundulan" class="block text-lg text-gray-700">Sundulan:</label>
+                    <input type="number" id="sundulan"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="eksekusiBolaMati" class="block text-lg text-gray-700">Eksekusi Bola Mati:</label>
+                    <input type="number" id="eksekusiBolaMati"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="kesadaranBertahan" class="block text-lg text-gray-700">Kesadaran Bertahan:</label>
+                    <input type="number" id="kesadaranBertahan"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="menekel" class="block text-lg text-gray-700">Menekel:</label>
+                    <input type="number" id="menekel"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+
+                    <label for="agresi" class="block text-lg text-gray-700">Agresi:</label>
+                    <input type="number" id="agresi" class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="keterlibatanBertahan" class="block text-lg text-gray-700">Keterlibatan Bertahan:</label>
+                    <input type="number" id="keterlibatanBertahan"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="kesadaranKiper" class="block text-lg text-gray-700">Kesadaran Kiper:</label>
+                    <input type="number" id="kesadaranKiper"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="tangkapanKiper" class="block text-lg text-gray-700">Tangkapan Kiper:</label>
+                    <input type="number" id="tangkapanKiper"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="tepisanKiper" class="block text-lg text-gray-700">Tepisan Kiper:</label>
+                    <input type="number" id="tepisanKiper"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+
+                </div>
+                <div class="space-y-2">
+                    <label for="refleksKiper" class="block text-lg text-gray-700">Refleks Kiper:</label>
+                    <input type="number" id="refleksKiper"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="jangkauanKiper" class="block text-lg text-gray-700">Jangkauan Kiper:</label>
+                    <input type="number" id="jangkauanKiper"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="kecepatan" class="block text-lg text-gray-700">Kecepatan:</label>
+                    <input type="number" id="kecepatan"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+
+                </div>
+                <div class="space-y-2">
+                    <label for="akselerasi" class="block text-lg text-gray-700">Akselerasi:</label>
+                    <input type="number" id="akselerasi"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+
+                </div>
+                <div class="space-y-2">
+                    <label for="kekuatanTendangan" class="block text-lg text-gray-700">Kekuatan Tendangan:</label>
+                    <input type="number" id="kekuatanTendangan" class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+
+                </div>
+                <div class="space-y-2">
+                    <label for="melompat" class="block text-lg text-gray-700">Melompat:</label>
+                    <input type="number" id="melompat"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+
+                </div>
+                <div class="space-y-2">
+                    <label for="kekuatanFisik" class="block text-lg text-gray-700">Kekuatan Fisik:</label>
+                    <input type="number" id="kekuatanFisik"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+                <div class="space-y-2">
+                    <label for="keseimbangan" class="block text-lg text-gray-700">Keseimbangan:</label>
+                    <input type="number" id="keseimbangan"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+
+                </div>
+                <div class="space-y-2">
+                    <label for="stamina" class="block text-lg text-gray-700">Stamina:</label>
+                    <input type="number" id="stamina"class="w-full p-2 border border-gray-300 rounded-md"><br><br>
+                </div>
+            </div>
+
+            <button type="submit"
+                class="w-full py-2 bg-purple-600 text-white font-semibold rounded-md hover:bg-purple-700">Tambah
+                Pemain</button>
+        </form>
+
+        <h2 class="text-2xl font-semibold text-purple-700 mt-8">Daftar Pemain</h2>
+        <ul id="playerList" class="mt-4 space-y-2">
+            <!-- List pemain akan tampil di sini -->
+        </ul>
+
+        <button id="analyzeButton"
+            class="hidden w-full mt-6 py-2 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700">Analisis
+            Pemain</button>
+        <div id="result" class="hidden mt-6">
+            <h3 class="text-xl font-semibold text-gray-700">Hasil Analisis</h3>
+            <div id="analysisText" class="mt-4 text-gray-600"></div>
+        </div>
+    </div>
+
+    <script>
+        const posisiKebutuhan = {
+            GK: {
+                deskripsi: "Kiper bertugas menjaga gawang dan mencegah bola masuk.",
+                keterampilan: ["kesadaranKiper", "tangkapanKiper", "tepisanKiper", "refleksKiper", "jangkauanKiper"]
+            },
+            CB: {
+                deskripsi: "Pemain bertahan tengah yang bertugas menghalau serangan lawan.",
+                keterampilan: ["menekel", "kesadaranBertahan", "agresi", "sundulan", "kekuatanFisik"]
+            },
+            LB: {
+                deskripsi: "Bek kiri yang bertugas bertahan dan membantu serangan di sisi kiri.",
+                keterampilan: ["menekel", "agresi", "keseimbangan", "kecepatan", "umpanRendah"]
+            },
+            RB: {
+                deskripsi: "Bek kanan yang bertugas bertahan dan membantu serangan di sisi kanan.",
+                keterampilan: ["menekel", "agresi", "keseimbangan", "kecepatan", "umpanRendah"]
+            },
+            DMF: {
+                deskripsi: "Gelandang bertahan yang menghubungkan lini belakang dan lini tengah.",
+                keterampilan: ["umpanRendah", "umpanLambung", "agresi", "kekuatanFisik", "stamina"]
+            },
+            CMF: {
+                deskripsi: "Gelandang tengah yang mengatur alur permainan dan distribusi bola.",
+                keterampilan: ["umpanRendah", "umpanLambung", "kecepatan", "agresi", "stamina"]
+            },
+            LMF: {
+                deskripsi: "Gelandang kiri yang menyerang dan bertahan di sisi kiri.",
+                keterampilan: ["kecepatan", "stamina", "umpanRendah", "drible", "penyelesaian"]
+            },
+            RMF: {
+                deskripsi: "Gelandang kanan yang menyerang dan bertahan di sisi kanan.",
+                keterampilan: ["kecepatan", "stamina", "umpanRendah", "drible", "penyelesaian"]
+            },
+            AMF: {
+                deskripsi: "Gelandang serang yang bertugas memberikan umpan-umpan kreatif ke depan.",
+                keterampilan: ["umpanLambung", "penyelesaian", "agresi", "stamina", "dribleAkurat"]
+            },
+            LWF: {
+                deskripsi: "Winger kiri yang cepat dan menyerang dari sisi kiri.",
+                keterampilan: ["kecepatan", "drible", "penyelesaian", "umpanRendah", "stamina"]
+            },
+            RWF: {
+                deskripsi: "Winger kanan yang cepat dan menyerang dari sisi kanan.",
+                keterampilan: ["kecepatan", "drible", "penyelesaian", "umpanRendah", "stamina"]
+            },
+            SS: {
+                deskripsi: "Second striker yang bermain di belakang penyerang utama.",
+                keterampilan: ["penyelesaian", "sundulan", "dribleAkurat", "agresi", "kecepatan"]
+            },
+            CF: {
+                deskripsi: "Penyerang tengah yang bertugas mencetak gol.",
+                keterampilan: ["penyelesaian", "sundulan", "dribleAkurat", "agresi", "kekuatanTendangan"]
+            }
+        };
+
+        const playerForm = document.getElementById('playerForm');
+        const playerList = document.getElementById('playerList');
+        const analyzeButton = document.getElementById('analyzeButton');
+        const analysisText = document.getElementById('analysisText');
+        const resultDiv = document.getElementById('result');
+
+        let players = [];
+
+        playerForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const playerName = document.getElementById('playerName').value;
+            const playerPosition = document.getElementById('playerPosition').value;
+
+            const playerStats = {};
+            const statsIds = [
+                'drible', 'dribleAkurat', 'umpanRendah', 'umpanLambung', 'penyelesaian',
+                'sundulan', 'eksekusiBolaMati', 'kesadaranBertahan', 'menekel', 'agresi',
+                'keterlibatanBertahan', 'kesadaranKiper', 'tangkapanKiper', 'tepisanKiper',
+                'refleksKiper', 'jangkauanKiper', 'kecepatan', 'akselerasi', 'kekuatanTendangan',
+                'melompat', 'kekuatanFisik', 'keseimbangan', 'stamina'
+            ];
+
+            statsIds.forEach(id => {
+                playerStats[id] = parseInt(document.getElementById(id).value) || 0;
+            });
+
+            const player = {
+                name: playerName,
+                position: playerPosition,
+                stats: playerStats,
+                kebutuhan: posisiKebutuhan[playerPosition]
+            };
+
+            players.push(player);
+
+            const playerItem = document.createElement('li');
+            playerItem.textContent = `${player.name} (${player.position})`;
+            playerList.appendChild(playerItem);
+
+            analyzeButton.classList.remove('hidden');
+            playerForm.reset();
+        });
+
+        analyzeButton.addEventListener('click', function () {
+            let analysis = '';
+
+            players.forEach(player => {
+                const { deskripsi, keterampilan } = player.kebutuhan;
+                analysis += `<h3>${player.name} - ${player.position}</h3>`;
+                analysis += `<p>${deskripsi}</p>`;
+                analysis += `<p>Keterampilan yang dibutuhkan: ${keterampilan.join(', ')}</p><br>`;
+
+                let totalScore = 0;
+                let skillScores = [];
+
+                keterampilan.forEach(skill => {
+                    const skillScore = player.stats[skill] || 0;
+                    totalScore += skillScore;
+                    skillScores.push(`${skill}: ${skillScore}`);
+                });
+
+                // Menampilkan keterampilan dan nilai
+                skillScores.forEach(score => {
+                    analysis += `<p>${score}</p>`;
+                });
+
+                // Menghitung rata-rata skor
+                const avgScore = totalScore / keterampilan.length;
+                analysis += `<p>Rata-rata skor: ${avgScore.toFixed(2)}</p><br>`;
+
+                // Memberikan saran berdasarkan rata-rata skor
+                if (avgScore < 6) {
+                    analysis += `<p>Pemain ini perlu meningkatkan keterampilannya untuk posisi ini.</p><br>`;
+                } else if (avgScore >= 6 && avgScore <= 8) {
+                    analysis += `<p>Pemain ini memiliki keterampilan yang cukup baik, tetapi masih perlu beberapa perbaikan.</p><br>`;
+                } else if (avgScore > 8) {
+                    analysis += `<p>Pemain ini memiliki keterampilan yang sangat baik untuk posisi ini.</p><br>`;
+                } else {
+                    analysis += `<p>Pemain ini sangat kompeten di posisi ini dengan keterampilan yang sangat baik.</p><br>`;
+                }
+            });
+
+            analysisText.innerHTML = analysis;
+            resultDiv.classList.remove('hidden');
+        });
+
+
+    </script>
+</body>
+
+</html>
